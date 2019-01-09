@@ -1,0 +1,13 @@
+.about {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  @mixin atMedium {
+    margin-top: 10rem;
+    margin-bottom: 16rem;
+  }
+
+  &__text-content {
+    margin-top: 4rem;
+  }
+}

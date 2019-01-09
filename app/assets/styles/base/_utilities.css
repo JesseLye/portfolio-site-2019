@@ -1,0 +1,15 @@
+.u-display-inline-block {
+  display: inline-block;
+}
+
+.u-display-block {
+  display: block;
+}
+
+.u-margin-top {
+  margin-top: 2rem;
+}
+
+.u-float-right {
+  float: right;
+}

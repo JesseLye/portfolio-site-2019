@@ -1,0 +1,23 @@
+.about {
+  &__header {
+    margin-bottom: 0.7rem;
+    color: #7F8C8D;
+  }
+
+  &__underline {
+    width: 60px;
+    height: 1px;
+    background-color: rgba(0,0,0,.6);
+    /*margin: 10px 0 14px 1px;*/
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
+    line-height: 3rem;
+
+    @mixin atMedium {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+}

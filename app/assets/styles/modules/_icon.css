@@ -1,0 +1,22 @@
+.icon {
+  font-size: 1.1rem;
+  text-align: center;
+
+  @mixin atMedium {
+    margin-right: 1rem;
+    font-size: 2.3rem;
+  }
+
+  @mixin atLarge {
+    margin-right: 3.3rem;
+    font-size: 3rem;
+  }
+}
+
+.colored {
+  transition: all .2s;
+}
+
+.no-color {
+  transition: all .2s;
+}

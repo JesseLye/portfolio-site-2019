@@ -1,0 +1,100 @@
+.latest-projects {
+  &__project {
+    /*margin-top: 2rem;
+    margin-bottom: 4rem;*/
+    margin: 25px auto 100px;
+  }
+
+  &--main-header {
+    margin-bottom: 0.7rem;
+  }
+
+  &--header {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    line-height: 1.13;
+    color: #7F8C8D;
+    font-size: 1.3rem;
+
+    @mixin atMedium {
+      margin: 0;
+    }
+  }
+
+  &--text {
+    line-height: 1.565;
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+
+    @mixin atMedium {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &--button {
+    text-decoration: none;
+    color: white;
+    background-color: #72C9B9;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+    transition: background-color .4s;
+    text-transform: uppercase;
+    
+
+    &:hover {
+      background-color: #66B4A6;
+    }
+
+    @mixin atMedium {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  &--button-border {
+    text-decoration: none;
+    color: #72C9B9;
+    border: 1px solid #72C9B9;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+    transition: all .4s;
+
+    &:hover {
+      background-color: #66B4A6;
+      color: #FFF;
+      border: 1px solid #72C9B9;
+    }
+
+    @mixin atMedium {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  &__image {
+    /*height: 100%;
+    width: 100%;*/
+
+    &--mobile {
+      display: block;
+      @mixin atMedium {
+        display: none;
+      }
+    }
+
+    &--hidden-on-mobile {
+      display: none;
+
+      @mixin atMedium {
+        display: block;
+      }
+    }
+  }
+
+  &__tech-icons {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}

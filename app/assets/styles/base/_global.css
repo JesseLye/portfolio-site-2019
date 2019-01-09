@@ -1,0 +1,14 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #6C797A;
+  background-color: #FFF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
