@@ -161,52 +161,25 @@
           <p>e: jjlye6@outlook.com</p>
           <p>ph: 0457485740</p>
         </div>
-        <form class="u-margin-top" id="contact-form" onsubmit="submitForm(); return false;">
-          <div class="row row--gutters">
-              <div class="row__medium-6">
-                <label class="contact-form--label" for="name">Name</label>
-                <input class="contact-form--input" id="name" placeholder="Name" style="width: 100%;" required>
-                <label class="contact-form--label" for="email">Email</label>
-                <input class="contact-form--input" id="email" placeholder="Email Address" type="email" style="width: 100%;" required>
-                <label class="contact-form--label" for="subject">Subject</label>
-                <input class="contact-form--input" id="subject" placeholder="Subject" type="subject" style="width: 100%;" required>
-              </div>
-              <div class="row__medium-6">
-                <textarea class="contact-form--text-area" id="message" rows="12" placeholder="Write your message here." required></textarea>
-                <button class="contact-form--button u-float-right" id="mybtn" type="submit">SEND EMAIL</button>
-              </div>
-              <p id="status"></p>
-          </div>
-        </form>
+        <form class="u-margin-top" action="https://formspree.io/jjlye6@outlook.com" method="POST">
+         <div class="row row--gutters">
+             <div class="row__medium-6">
+               <label class="contact-form--label" for="name">Name</label>
+               <input class="contact-form--input" id="name" placeholder="Name" style="width: 100%;" name="name" required>
+               <label class="contact-form--label" for="email">Email</label>
+               <input class="contact-form--input" id="email" placeholder="Email Address" type="email" style="width: 100%;" name="email" required>
+               <label class="contact-form--label" for="subject">Subject</label>
+               <input class="contact-form--input" id="subject" placeholder="Subject" type="subject" style="width: 100%;" name="subject" required>
+             </div>
+             <div class="row__medium-6">
+               <textarea class="contact-form--text-area" id="message" rows="12" placeholder="Write your message here." name="message" required></textarea>
+               <button class="contact-form--button u-float-right" id="mybtn" type="submit">SEND EMAIL</button>
+             </div>
+         </div>
+       </form>
       </div>
     </section>
   </body>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="assets/scripts/App-ca1e3fa76d.js"></script>
-  <script>
-    function _(id) { return document.getElementById(id); }
-    function submitForm(){
-      _("mybtn").disabled = true;
-      _("status").innerHTML = 'please wait ...';
-      var formdata = new FormData();
-      formdata.append("n", _("name").value);
-      formdata.append("e", _("email").value);
-      formdata.append("s", _("subject").value);
-      formdata.append("m", _("message").value);
-      // formdata.append("t", _("my_form").getAttribute("to"))
-      var ajax = new XMLHttpRequest();
-      ajax.open( "POST", "mail_parser.php" );
-      ajax.onreadystatechange = function() {
-        if(ajax.readyState == 4 && ajax.status == 200) {
-          if(ajax.responseText == "success"){
-            _("contact-form").innerHTML = '<p>Thanks '+_("n").value+', your message has been sent.</p>';
-          } else {
-            // _("status").innerHTML = ajax.responseText;
-            _("mybtn").disabled = false;
-          }
-        }
-      }
-      ajax.send( formdata );
-    }
-  </script>
 </html>
