@@ -4229,6 +4229,32 @@ img {
     margin: 25px auto 100px;
   }
 
+.latest-projects__demo-box {
+    line-height: 1.565;
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+  }
+
+@media (min-width: 800px) {
+
+.latest-projects__demo-box {
+      margin-top: 1rem;
+      margin-bottom: 2rem
+  }
+  }
+
+.latest-projects__demo-box--details {
+      margin: 0rem;
+    }
+
+@media (min-width: 800px) {
+
+.latest-projects__demo-box--details {
+        margin-top: 0.2rem;
+        margin-bottom: 0.5rem
+    }
+  }
+
 .latest-projects--main-header {
     margin-bottom: 0.7rem;
   }
@@ -4259,6 +4285,21 @@ img {
 .latest-projects--text {
       font-size: 1.4rem;
       margin-bottom: 2rem
+  }
+  }
+
+.latest-projects--text-reduced-margin-at-small {
+    line-height: 1.565;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+@media (min-width: 800px) {
+
+.latest-projects--text-reduced-margin-at-small {
+      margin-bottom: 1.4rem;
+      font-size: 1.4rem;
+      margin-bottom: 1rem
   }
   }
 
